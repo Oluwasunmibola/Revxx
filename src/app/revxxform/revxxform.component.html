@@ -1,0 +1,130 @@
+{{revxx}}
+<div class="container">
+  <div class="jumbotron">
+    <h2>Revxx Form</h2>
+  </div>
+  
+  <div class="formbody">
+   <form [formGroup]="revxxForm" class="col s12 white" >
+       <h3>Decleration Transaction</h3>
+      <div class="row">
+        <div class="input-field col s6" >
+            <!-- <label> payment Rate Name: </label> -->
+          <input class="ng" type="text" name="paymentRateName"  placeholder="paymentRateName" formControlName="paymentRateName">
+        </div>
+        <div class="input-field col s6">
+            <!--<label> TransactionID </label>-->
+          <input class="ng" type="text" name="TransactionID"  placeholder="TransactionID" formControlName="TransactionID">
+        </div>
+      </div>
+      
+
+      <div class="row">
+        <div class="input-field col s6">
+            <!--<label>Base Amount</label>-->
+          <input class="ng" type="text" name="baseAmount"  placeholder="baseAmount" formControlName="baseAmount">
+        </div>
+        <div class="input-field col s6">
+          <!--<label>Hash Code</label>-->
+          <input class="ng" type="text" name="hashCode"  placeholder="hashCode" formControlName="hashCode">
+        </div>
+      </div>
+
+      <div id="form2">
+        <h3>Customer Details</h3>
+        <div class="row">
+          <div class="input-field col s6">
+              <!--<label>Customer Name</label>-->
+            <input class="ng" type="text" name="customerName"  placeholder="customerName" formControlName="customerName">
+          </div>
+          <div class="input-field col s6">
+              <!--<label>RcNumber</label>-->
+            <input class="ng" type="text" name="RcNumber"  placeholder="RcNumber" >
+          </div>
+          <div class="input-field col s6">
+              <!--<label>Address</label>-->
+            <input class="ng" type="text" name="Address"  placeholder="Address" >
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s6">
+             <!-- <label>Email</label>-->
+            <input class="ng" type="email" name="email"  placeholder="email" >
+          </div>
+          <div class="input-field col s6">
+             <!-- <label>Phone Number</label>-->
+            <input class="ng" type="number" name="phoneNumber"  placeholder="phoneNumber" >
+          </div>
+          <div class="input-field col s6">
+             <!-- <label>TaxID</label>-->
+            <input class="ng" type="text" name="taxID"  placeholder="taxID" >
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="input-field col s6">
+             <!-- <label>CustomerID</label>-->
+            <input class="ng" type="customerID" name="customerID"  placeholder="customerID" >
+          </div>
+        </div>
+      </div>
+
+      <div id="form3">
+        <h3>Company Branch</h3>
+        <div class="row">
+          <div class="input-field col s6">
+            <input class="ng" type="text" name="companyCode"  placeholder="companyCode" formControlName="companyCode">
+          </div>
+          <div class="input-field col s6">
+            <input class="ng" type="text" name="companyBranchCode" placeholder="companyBranchCode" formControlName="companyBranchCode">
+          </div>
+          <div class="input-field col s6">
+            <input class="ng" type="text" name="companyBranchName" placeholder="companyBranchName" formControlName="companyBranchName">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s6">
+            <input class="ng" type="text" name="companyRcNumber" placeholder="companyBranchRcNumber" >
+          </div>
+          <div class="input-field col s6">
+            <input class="ng" type="text" name="companyBranchAddress" placeholder="companyBranchAddress" >
+          </div>
+          <div class="input-field col s6">
+            <input class="ng" type="email" name="companyBranchEmail" placeholder="companyBranchEmail" >
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s6">
+            <input class="ng" type="text" name="companyBranchPhoneNumber" placeholder="companyBranchPhoneNumber" >
+          </div>
+          <div class="input-field col s6">
+            <input class="ng" type="text" name="stateCode" placeholder="stateCode"  >
+          </div>
+          <div class="input-field col s6">
+            <input class="ng" type="text" name="companyBranchTaxID" placeholder="companyBranchTaxID" >
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s6">
+            <input class="ng" type="text" name="transactionTypeID" placeholder="transactionTypeID" formControlName="transactionTypeID">
+          </div>
+          <div class="input-field col s6">
+            <input class="ng" type="transactionDescription" name="transactionDescription" placeholder="transactionDescription" >
+          </div>
+          <div class="input-field col s6">
+            <input class="ng" type="date" name="jobDate" placeholder="jobDate" formControlName="jobDate">
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <button (click)="test()" [disabled]="!revxxForm.valid" class="btn=lg btn-submit btn-primary" type="submit">Submit</button>
+          </div>
+      </div>
+      </div>
+    </form>
+  </div>
+</div>
